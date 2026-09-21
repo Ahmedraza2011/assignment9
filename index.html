@@ -1,0 +1,175 @@
+
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Sign In Page Assignment</title>
+    <style>
+        /* Student style: Basic reset and body alignment */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333; /* Dark background to highlight the form like image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Main Container split into two halves */
+        .main-container {
+            width: 750px;
+            height: 450px;
+            display: flex;
+            background-color: white;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+        }
+
+        /* --- LEFT SIDE: SIGN IN FORM --- */
+        .left-side {
+            width: 50%;
+            background-color: #f7f7f7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        .left-side h1 {
+            margin: 0 0 15px 0;
+            font-size: 32px;
+            color: #000;
+        }
+        /* Social Media Icons (Simple Circular Student Method) */
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .icon {
+            width: 35px;
+            height: 35px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            color: #555;
+            background-color: white;
+        }
+        .small-text {
+            font-size: 12px;
+            color: #777;
+            margin-bottom: 15px;
+        }
+        /* Form Inputs */
+        .input-field {
+            width: 100%;
+            background-color: #eee;
+            border: none;
+            padding: 12px 15px;
+            margin: 8px 0;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        .forgot-link {
+            color: #555;
+            font-size: 13px;
+            text-decoration: none;
+            margin: 15px 0;
+        }
+        /* Rounded Sign In Button */
+        .signin-btn {
+            background-color: #ff4b2b;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 12px 45px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        /* --- RIGHT SIDE: WELCOME PANEL --- */
+        .right-side {
+            width: 50%;
+            background-color: #ff4b2b; /* Vibrant red-orange from image */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .right-side h1 {
+            margin: 0 0 15px 0;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .right-side p {
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0 0 30px 0;
+        }
+        /* Transparent Outline Button */
+        .signup-btn {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            border-radius: 20px;
+            padding: 12px 45px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <!-- LEFT PANEL: SIGN IN -->
+        <div class="left-side">
+            <h1>Sign in</h1>
+            
+            <!-- Social Circles -->
+            <div class="social-icons">
+                <div class="icon">f</div>
+                <div class="icon">G+</div>
+                <div class="icon">in</div>
+            </div>
+            
+            <div class="small-text">or use your account</div>
+            
+            <form style="width: 100%; text-align: center;">
+                <input type="text" class="input-field" placeholder="Email">
+                <input type="password" class="input-field" placeholder="Password">
+                
+                <br>
+                <a href="#" class="forgot-link">Forgot your password?</a>
+                <br>
+                
+                <button type="submit" class="signin-btn">Sign In</button>
+            </form>
+        </div>
+
+        <!-- RIGHT PANEL: HELLO FRIEND -->
+        <div class="right-side">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start<br>journey with us</p>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
